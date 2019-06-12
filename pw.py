@@ -3,7 +3,7 @@ import string
 import argparse
 
 
-__version__ = '0.0.1'
+__version__ = '0.1'
 
 
 ALPHABET_LOWER = tuple(string.ascii_lowercase)
@@ -22,8 +22,8 @@ def generate_pw(length, sequence):
     while not len(password) == length:
         sc = random.choice(range(len(sequence)))
         cc = random.choice(sequence[sc])[0]
-        if password:
-            if password[-1] != cc:
+        if password and args.one_time:
+            if cc not in password:
                 password.append(cc)
         else:
             password.append(cc)
@@ -85,23 +85,23 @@ def _parse_args():
     parser.add_argument(
         '-n',
         '--num',
-        # default=True,
         action='store_true',
         help='Use numbers'
     )
     parser.add_argument(
         '-s',
         '--special',
-        # default=True,
         action='store_true',
         help='Use special characters'
     )
-    # debug/version
+    # options
     parser.add_argument(
-        '--debug',
+        '-o',
+        '--one-time',
         action='store_true',
-        help='Enable debug logging'
+        help='Use characters only one time per pw'
     )
+    # version
     parser.add_argument(
         '-v',
         '--version',

@@ -1,7 +1,8 @@
 # python-scripts
 
-## pw.py - a python commandline password generator
-
+## [pw](pw.py) - a python commandline password generator
+###### [(view source)](https://github.com/ckrmml/python-scripts/blob/master/pw.py)
+#### usage
     python-scripts $ python pw.py --help
     usage: pw.py [-h] [-c int] [-l int] [-a l/u/b] [-n] [-s] [-o] [-v]
 
@@ -18,5 +19,17 @@
      -o, --one-time        Use characters only one time per pw (default: False)
      -v, --version         show program's version number and exit
 
+----------------------------------------------
+
+## [duplicate](duplicate.py) - Find duplicate files
+###### [(view source)](https://github.com/ckrmml/python-scripts/blob/master/duplicate.py)
+#### usage:
+    python-scripts $ python duplicate.py
+    Usage: python dupFinder.py folder or python dupFinder.py folder1 folder2 folder3
+
+#### credits:
+[Andres Torres](https://www.pythoncentral.io/finding-duplicate-files-with-python/)  
+
 # License
-If not declared otherwise here, all scripts fall under the MIT-License
+If not stated otherwise here, do whatever the fuck u want  
+-> ```duplicate.py```: none given at source, so there's that

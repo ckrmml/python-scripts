@@ -30,6 +30,27 @@
 #### credits:
 [Andres Torres](https://www.pythoncentral.io/finding-duplicate-files-with-python/)  
 
+----------------------------------------------
+
+## [progress](progress.py) - Python Progress Bar
+###### [(view source)](https://github.com/ckrmml/python-scripts/blob/master/progress.py)
+#### usage:
+Call in a loop to create terminal progress bar  
+
+    print_progress(iteration, total, prefix='', suffix='', decimals=1, bar_length=100):
+
+    iteration   - Required  : current iteration (Int)
+    total       - Required  : total iterations (Int)
+    prefix      - Optional  : prefix string (Str)
+    suffix      - Optional  : suffix string (Str)
+    decimals    - Optional  : positive number of decimals in percent complete (Int)
+    bar_length  - Optional  : character length of bar (Int)
+
+#### credits:
+[aubricus](https://github.com/aubricus)  
+[src origin](https://gist.github.com/aubricus/f91fb55dc6ba5557fbab06119420dd6a)  
+
 # License
-If not stated otherwise here, do whatever the fuck u want  
--> ```duplicate.py```: none given at source, so there's that
+If not stated otherwise here, `LICENSE = NULL`  
+-> ```duplicate.py```: none given at source  
+-> ```progress.py```: none given at source
